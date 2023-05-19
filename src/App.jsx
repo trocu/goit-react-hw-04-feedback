@@ -30,11 +30,7 @@ export default class App extends Component {
     const total = this.countTotalFeedback();
     const options = Object.keys(this.state);
     const positivePercentage = this.countPositiveFeedbackPercentage();
-    // let isStateValues = Object.values(this.state);
-    // console.log("Object values: ", Object.values(this.state));
-    // console.log("isStateValues: ", isStateValues.length);
-    // console.log(this.state);
-    // console.log("total: ", total);
+
     return (
       <>
         <Section title="Please leave feedback">
@@ -55,15 +51,6 @@ export default class App extends Component {
               positivePercentage={positivePercentage}
             />
           )}
-          {/* {isStateValues.includes(1) && (
-            <Statistics
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={total}
-              positivePercentage={positivePercentage}
-            />
-          )} */}
         </Section>
       </>
     );
